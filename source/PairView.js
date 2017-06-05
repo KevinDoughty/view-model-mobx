@@ -15,7 +15,7 @@ const PairView = (class extends Component {
 	}
 
 	draggingDivider(draggingDivider) {
-		console.log("pair drag props:", this.props );
+		//console.log("pair drag:%s; props:",draggingDivider, this.props );
 	}
 
 	render() {

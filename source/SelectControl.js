@@ -9,7 +9,6 @@ const SelectControl = (class extends Component {
 	}
 	handleChange(e) {
 		const node = this.props.representedObject;
-		const choiceIds = this.props.choiceIds;
 		const value = e.target.value;
 		node.mutable.below = value;
 	}
