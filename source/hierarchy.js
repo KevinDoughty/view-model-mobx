@@ -131,8 +131,8 @@ const hierarchy = {
 		kind: "div",
 		style: {
 			backgroundColor:"purple",
-			paddingTop:"15px",
-			paddingBottom:"15px",
+			paddingTop:"150px",
+			paddingBottom:"150px",
 			width:"100%",
 			position:"relative"
 		},
@@ -142,8 +142,8 @@ const hierarchy = {
 		kind: "div",
 		style: {
 			backgroundColor:"pink",
-			paddingTop:"15px",
-			paddingBottom:"15px",
+			paddingTop:"150px",
+			paddingBottom:"150px",
 			width:"100%",
 			position:"relative"
 		},
