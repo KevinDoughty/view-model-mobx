@@ -14233,7 +14233,9 @@ function setter(object, key, value) {
 function itemTransformer(result, source, key) {
 	//return createTransformer( (item) => {
 	return function (item) {
-		var node = Object.assign(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_mobx__["toJS"])(item), {
+		var node = Object.assign(
+		//toJS(item),
+		Object.assign({}, item), {
 			id: key,
 			key: key,
 			mutable: item
@@ -14520,7 +14522,7 @@ var ContentView = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_mobx_react__
 				var attributes = this.elementAttributesFromNode(node);
 				return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(type, attributes, children);
 			} else if (type) {
-				return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["observer"])(type), props, children);
+				return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(type, props, children); // I don't have to make every component observable!
 			} // else if React 16 return children
 		}
 	}, {

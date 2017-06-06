@@ -21,7 +21,8 @@ function itemTransformer(result,source,key) {
 	//return createTransformer( (item) => {
 	return ( item => {
 		const node = (Object.assign(
-			toJS(item),
+			//toJS(item),
+			Object.assign({},item),
 			{
 				id:key,
 				key:key,

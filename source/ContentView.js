@@ -34,7 +34,7 @@ const ContentView = observer(class extends Component {
 			const attributes = this.elementAttributesFromNode(node);
 			return React.createElement(type, attributes, children);
 		} else if (type) {
-			return React.createElement(observer(type), props, children);
+			return React.createElement(type, props, children); // I don't have to make every component observable!
 		} // else if React 16 return children
 	}
 
